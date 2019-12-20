@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="ipad9_7" orientation="landscape">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="LucidaGrande.ttf">
+            <string>LucidaGrande</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="KuznetskyMenuCover" customModule="Simple_Wine" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="1024" height="786"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background_cover_sw_kuznetsky" translatesAutoresizingMaskIntoConstraints="NO" id="dgj-HI-bhA" userLabel="Background Image">
+                    <rect key="frame" x="0.0" y="0.0" width="1024" height="786"/>
+                </imageView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oiG-fw-lyk" userLabel="Border Line View">
+                    <rect key="frame" x="38" y="45" width="948" height="703"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="RUS / ENG" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5B3-Ls-wmk">
+                            <rect key="frame" x="882.5" y="25" width="40.5" height="7.5"/>
+                            <fontDescription key="fontDescription" name="LucidaGrande" family="Lucida Grande" pointSize="8"/>
+                            <color key="textColor" red="0.83921568627450982" green="0.83921568627450982" blue="0.78823529411764703" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo_sw_kuznetsky_menu_cover" translatesAutoresizingMaskIntoConstraints="NO" id="D4J-PP-2Fr">
+                            <rect key="frame" x="25" y="25" width="426" height="39"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="426" id="63Y-jg-D6q"/>
+                                <constraint firstAttribute="height" constant="39" id="A0O-4s-Q3h"/>
+                            </constraints>
+                        </imageView>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b4A-rh-xk5" userLabel="Logout Button">
+                            <rect key="frame" x="25" y="12" width="60" height="44"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="60" id="bkx-U7-sDR"/>
+                                <constraint firstAttribute="height" constant="44" id="fpJ-tb-r4G"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" weight="medium" pointSize="15"/>
+                            <state key="normal" title="Выход">
+                                <color key="titleColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </state>
+                            <connections>
+                                <action selector="logoutButtonPressed:" destination="-2" eventType="touchUpInside" id="FfG-c0-oCp"/>
+                            </connections>
+                        </button>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="km_award_1" translatesAutoresizingMaskIntoConstraints="NO" id="Bcg-h5-YKK">
+                            <rect key="frame" x="25" y="533" width="66" height="120"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="120" id="7fq-2R-lQA"/>
+                                <constraint firstAttribute="width" constant="66" id="iAt-1M-o25"/>
+                            </constraints>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lMk-PY-uEW" userLabel="Info Label">
+                            <rect key="frame" x="25" y="451" width="873" height="52"/>
+                            <mutableString key="text">Винная карта «SimpleWine&amp;Kitchen» состоит из более, чем 1000 вин от лучших мировых производителей.
+Все вина объединяет одно начало  - стремление к совершенству их создателями.
+
+В 2019 году карта получила престижную американскую награду от винного журнала Wine Spectator «Один бокал».</mutableString>
+                            <fontDescription key="fontDescription" name="LucidaGrande" family="Lucida Grande" pointSize="14"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="1xK-cE-4Lg" userLabel="Links Stack View">
+                            <rect key="frame" x="106" y="624" width="132" height="29"/>
+                            <subviews>
+                                <stackView opaque="NO" contentMode="scaleToFill" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="LG3-hF-15l">
+                                    <rect key="frame" x="0.0" y="0.0" width="132" height="12"/>
+                                    <subviews>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lNa-G1-mN2">
+                                            <rect key="frame" x="0.0" y="0.0" width="12" height="12"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="FacebookSmallIcon" translatesAutoresizingMaskIntoConstraints="NO" id="IRc-Gt-mmB">
+                                                    <rect key="frame" x="4" y="3" width="8" height="8"/>
+                                                    <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="8" id="6Os-mu-6Pl"/>
+                                                        <constraint firstAttribute="width" constant="8" id="n0O-Ps-zZY"/>
+                                                    </constraints>
+                                                </imageView>
+                                            </subviews>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <constraints>
+                                                <constraint firstAttribute="bottom" secondItem="IRc-Gt-mmB" secondAttribute="bottom" constant="1" id="Vej-4u-Dyc"/>
+                                                <constraint firstAttribute="trailing" secondItem="IRc-Gt-mmB" secondAttribute="trailing" id="XyR-do-m6n"/>
+                                                <constraint firstAttribute="width" constant="12" id="dFl-iq-t8K"/>
+                                                <constraint firstAttribute="height" constant="12" id="wZi-R2-WIW"/>
+                                            </constraints>
+                                        </view>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="@simplewkitchen" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kzy-fc-Gen">
+                                            <rect key="frame" x="14" y="0.0" width="118" height="12"/>
+                                            <fontDescription key="fontDescription" name="LucidaGrande" family="Lucida Grande" pointSize="14"/>
+                                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                </stackView>
+                                <stackView opaque="NO" contentMode="scaleToFill" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="Rac-5O-TBB">
+                                    <rect key="frame" x="0.0" y="17" width="132" height="12"/>
+                                    <subviews>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1aK-2C-RAe">
+                                            <rect key="frame" x="0.0" y="0.0" width="12" height="12"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="InstagramSmallIcon" translatesAutoresizingMaskIntoConstraints="NO" id="asB-Hx-mcN">
+                                                    <rect key="frame" x="4" y="3" width="8" height="8"/>
+                                                    <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="8" id="1Bf-LW-Yro"/>
+                                                        <constraint firstAttribute="width" constant="8" id="w5M-DM-QOA"/>
+                                                    </constraints>
+                                                </imageView>
+                                            </subviews>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <constraints>
+                                                <constraint firstAttribute="bottom" secondItem="asB-Hx-mcN" secondAttribute="bottom" constant="1" id="8G5-rt-MjM"/>
+                                                <constraint firstAttribute="height" constant="12" id="IXK-Wv-Ta6"/>
+                                                <constraint firstAttribute="width" constant="12" id="WIu-t0-NOg"/>
+                                                <constraint firstAttribute="trailing" secondItem="asB-Hx-mcN" secondAttribute="trailing" id="nTu-wC-Tlp"/>
+                                            </constraints>
+                                        </view>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="@simplewkitchen" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UuL-Fm-FCL">
+                                            <rect key="frame" x="14" y="0.0" width="118" height="12"/>
+                                            <fontDescription key="fontDescription" name="LucidaGrande" family="Lucida Grande" pointSize="14"/>
+                                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                </stackView>
+                            </subviews>
+                        </stackView>
+                        <stackView opaque="NO" contentMode="scaleToFill" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="rtk-nH-hXm">
+                            <rect key="frame" x="636.5" y="623" width="261.5" height="30"/>
+                            <subviews>
+                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="RedArrowIcon" translatesAutoresizingMaskIntoConstraints="NO" id="h2F-YF-gjc">
+                                    <rect key="frame" x="0.0" y="0.0" width="42" height="30"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="30" id="aXl-vF-qAs"/>
+                                        <constraint firstAttribute="width" constant="42" id="uFu-eS-F3b"/>
+                                    </constraints>
+                                </imageView>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ВИННАЯ КАРТА" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UnL-f8-EcJ">
+                                    <rect key="frame" x="57" y="0.0" width="204.5" height="30"/>
+                                    <fontDescription key="fontDescription" name="LucidaGrande" family="Lucida Grande" pointSize="27"/>
+                                    <color key="textColor" red="0.83921568627450982" green="0.83921568627450982" blue="0.792156862745098" alpha="1" colorSpace="calibratedRGB"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                        </stackView>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BqE-Oq-P6q" userLabel="Wine Card Button">
+                            <rect key="frame" x="636.5" y="623" width="261.5" height="30"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <connections>
+                                <action selector="wineCardButtonPressed:" destination="-2" eventType="touchUpInside" id="Rib-nd-FDm"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="1xK-cE-4Lg" firstAttribute="leading" secondItem="Bcg-h5-YKK" secondAttribute="trailing" constant="15" id="2sZ-8E-Srg"/>
+                        <constraint firstItem="D4J-PP-2Fr" firstAttribute="top" secondItem="oiG-fw-lyk" secondAttribute="top" constant="25" id="6ba-ZK-HOk"/>
+                        <constraint firstItem="Bcg-h5-YKK" firstAttribute="top" secondItem="lMk-PY-uEW" secondAttribute="bottom" constant="30" id="COA-KN-PQ4"/>
+                        <constraint firstItem="D4J-PP-2Fr" firstAttribute="leading" secondItem="oiG-fw-lyk" secondAttribute="leading" constant="25" id="DmK-7u-EIj"/>
+                        <constraint firstItem="BqE-Oq-P6q" firstAttribute="top" secondItem="rtk-nH-hXm" secondAttribute="top" id="MiT-9n-qnG"/>
+                        <constraint firstItem="BqE-Oq-P6q" firstAttribute="leading" secondItem="rtk-nH-hXm" secondAttribute="leading" id="Seg-yD-cfc"/>
+                        <constraint firstAttribute="trailing" secondItem="5B3-Ls-wmk" secondAttribute="trailing" constant="25" id="T48-5d-cUs"/>
+                        <constraint firstItem="BqE-Oq-P6q" firstAttribute="bottom" secondItem="rtk-nH-hXm" secondAttribute="bottom" id="UYu-8l-Fmk"/>
+                        <constraint firstAttribute="trailing" secondItem="lMk-PY-uEW" secondAttribute="trailing" constant="50" id="W4B-nw-c8Y"/>
+                        <constraint firstItem="b4A-rh-xk5" firstAttribute="leading" secondItem="oiG-fw-lyk" secondAttribute="leading" constant="25" id="W8z-s9-RpZ"/>
+                        <constraint firstItem="Bcg-h5-YKK" firstAttribute="leading" secondItem="D4J-PP-2Fr" secondAttribute="leading" id="ZZ7-ua-uOD"/>
+                        <constraint firstItem="lMk-PY-uEW" firstAttribute="leading" secondItem="D4J-PP-2Fr" secondAttribute="leading" id="bjK-ZR-JCg"/>
+                        <constraint firstAttribute="bottom" secondItem="rtk-nH-hXm" secondAttribute="bottom" constant="50" id="hd6-cP-JKU"/>
+                        <constraint firstItem="b4A-rh-xk5" firstAttribute="top" secondItem="oiG-fw-lyk" secondAttribute="top" constant="12" id="iBA-75-GwY"/>
+                        <constraint firstItem="5B3-Ls-wmk" firstAttribute="top" secondItem="oiG-fw-lyk" secondAttribute="top" constant="25" id="ie0-De-2yd"/>
+                        <constraint firstAttribute="trailing" secondItem="rtk-nH-hXm" secondAttribute="trailing" constant="50" id="kZ5-NS-2dh"/>
+                        <constraint firstItem="1xK-cE-4Lg" firstAttribute="bottom" secondItem="Bcg-h5-YKK" secondAttribute="bottom" id="oSl-Ld-52b"/>
+                        <constraint firstAttribute="bottom" secondItem="Bcg-h5-YKK" secondAttribute="bottom" constant="50" id="wGr-fh-S0q"/>
+                        <constraint firstItem="BqE-Oq-P6q" firstAttribute="trailing" secondItem="rtk-nH-hXm" secondAttribute="trailing" id="zsv-uY-sBJ"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                            <real key="value" value="1"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                            <color key="value" red="0.56862745100000001" green="0.14117647059999999" blue="0.23921568630000001" alpha="1" colorSpace="calibratedRGB"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="dgj-HI-bhA" secondAttribute="bottom" id="7YW-Cu-Xn9"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="oiG-fw-lyk" secondAttribute="trailing" constant="38" id="9yg-BB-7pP"/>
+                <constraint firstAttribute="top" secondItem="dgj-HI-bhA" secondAttribute="top" id="HMs-Sm-Kjq"/>
+                <constraint firstAttribute="leading" secondItem="dgj-HI-bhA" secondAttribute="leading" id="TH9-Jx-th7"/>
+                <constraint firstItem="dgj-HI-bhA" firstAttribute="trailing" secondItem="iN0-l3-epB" secondAttribute="trailing" id="ijE-ru-4OF"/>
+                <constraint firstItem="oiG-fw-lyk" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="25" id="rWX-uo-fPJ"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="oiG-fw-lyk" secondAttribute="bottom" constant="38" id="taH-bc-Jat"/>
+                <constraint firstItem="oiG-fw-lyk" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="38" id="wQ7-wk-Vhd"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <point key="canvasLocation" x="157.91015625" y="167.1875"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="FacebookSmallIcon" width="18" height="18"/>
+        <image name="InstagramSmallIcon" width="18" height="19"/>
+        <image name="RedArrowIcon" width="62" height="43"/>
+        <image name="background_cover_sw_kuznetsky" width="683" height="512.5"/>
+        <image name="km_award_1" width="99" height="180"/>
+        <image name="logo_sw_kuznetsky_menu_cover" width="852" height="78"/>
+    </resources>
+</document>

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14868" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="ipad12_9rounded" orientation="landscape" layout="fullscreen" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14824"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Map Mode View Controller-->
+        <scene sceneID="oqV-qH-EQZ">
+            <objects>
+                <viewController storyboardIdentifier="MapModeViewController" title=" " useStoryboardIdentifierAsRestorationIdentifier="YES" id="1QR-0I-oJ3" userLabel="Map Mode View Controller" customClass="MapModeViewController" customModule="Simple_Wine" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="mQy-wZ-4et">
+                        <rect key="frame" x="0.0" y="0.0" width="1366" height="974"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="T4g-vr-BVN" userLabel="Separator View">
+                                <rect key="frame" x="20" y="0.0" width="1326" height="1"/>
+                                <color key="backgroundColor" red="0.70592284199999999" green="0.70569795369999999" blue="0.69356328249999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="1" id="ozQ-0m-FH5"/>
+                                </constraints>
+                            </view>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="IPo-9n-PYx">
+                                <rect key="frame" x="0.0" y="1" width="1366" height="953"/>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.91380113360000004" green="0.91027504209999999" blue="0.88513356450000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="gIC-Vc-bA6" firstAttribute="trailing" secondItem="IPo-9n-PYx" secondAttribute="trailing" id="3Cw-aH-uBz"/>
+                            <constraint firstItem="IPo-9n-PYx" firstAttribute="leading" secondItem="gIC-Vc-bA6" secondAttribute="leading" id="HUq-cZ-0ac"/>
+                            <constraint firstItem="IPo-9n-PYx" firstAttribute="top" secondItem="T4g-vr-BVN" secondAttribute="bottom" id="XC2-lM-gh2"/>
+                            <constraint firstItem="T4g-vr-BVN" firstAttribute="top" secondItem="gIC-Vc-bA6" secondAttribute="top" id="ZKa-fS-8yd"/>
+                            <constraint firstItem="gIC-Vc-bA6" firstAttribute="bottom" secondItem="IPo-9n-PYx" secondAttribute="bottom" id="dIK-7W-tVW"/>
+                            <constraint firstItem="T4g-vr-BVN" firstAttribute="trailing" secondItem="mQy-wZ-4et" secondAttribute="trailingMargin" id="npZ-DH-KBk"/>
+                            <constraint firstItem="T4g-vr-BVN" firstAttribute="leading" secondItem="mQy-wZ-4et" secondAttribute="leadingMargin" id="t1L-md-iFq"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="gIC-Vc-bA6"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="xwu-a7-4KZ"/>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" translucent="NO" prompted="NO"/>
+                    <connections>
+                        <outlet property="stackView" destination="IPo-9n-PYx" id="sl9-3w-SgQ"/>
+                        <outletCollection property="lines" destination="T4g-vr-BVN" collectionClass="NSMutableArray" id="Vnw-g4-Fkl"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="J36-WP-g27" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="7ss-lT-GkH" userLabel="Classic Menu Tap Gesture Recognizer">
+                    <connections>
+                        <action selector="classicMenuDidTap:" destination="1QR-0I-oJ3" id="TZR-Zr-YlB"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="auG-1n-rFn" userLabel="Price Menu Tap Gesture Recognizer">
+                    <connections>
+                        <action selector="priceMenuDidTap:" destination="1QR-0I-oJ3" id="BkJ-Wo-FpW"/>
+                    </connections>
+                </tapGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="1589.0625" y="861.71875"/>
+        </scene>
+    </scenes>
+</document>

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="CharterITC Italic.otf">
+            <string>CharterITC-Italic</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="44" id="KGk-i7-Jjw" customClass="LoadingCell" customModule="Simple_Wine" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="506" height="64"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="506" height="63.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" animating="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="DV9-Qk-vPU">
+                        <rect key="frame" x="243" y="22" width="20" height="20"/>
+                        <color key="color" red="0.64313725489999995" green="0.1176470588" blue="0.25490196079999999" alpha="1" colorSpace="deviceRGB"/>
+                    </activityIndicatorView>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TBg-bM-dcg">
+                        <rect key="frame" x="112.5" y="6" width="281" height="52"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Произошла ошибка при загрузке данных. " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hib-jM-Izt">
+                                <rect key="frame" x="0.0" y="0.0" width="281" height="19"/>
+                                <fontDescription key="fontDescription" name="CharterITC-Italic" family="CharterITC" pointSize="15"/>
+                                <color key="textColor" red="0.64313725489999995" green="0.1176470588" blue="0.25490196079999999" alpha="1" colorSpace="deviceRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SId-rn-HQB">
+                                <rect key="frame" x="73" y="25" width="135" height="27"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="27" id="417-hE-q4p"/>
+                                    <constraint firstAttribute="width" constant="135" id="6pw-Av-iSr"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="CharterITC-Italic" family="CharterITC" pointSize="14"/>
+                                <state key="normal" title="Попробовать снова">
+                                    <color key="titleColor" red="0.64313725489999995" green="0.1176470588" blue="0.25490196079999999" alpha="1" colorSpace="deviceRGB"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="SId-rn-HQB" firstAttribute="centerX" secondItem="TBg-bM-dcg" secondAttribute="centerX" id="0HU-PA-Eey"/>
+                            <constraint firstAttribute="trailing" secondItem="hib-jM-Izt" secondAttribute="trailing" id="Ncz-2S-WBB"/>
+                            <constraint firstItem="hib-jM-Izt" firstAttribute="leading" secondItem="TBg-bM-dcg" secondAttribute="leading" id="aw0-2u-kcE"/>
+                            <constraint firstItem="SId-rn-HQB" firstAttribute="top" secondItem="hib-jM-Izt" secondAttribute="bottom" constant="6" id="ftq-2Y-i55"/>
+                            <constraint firstItem="hib-jM-Izt" firstAttribute="top" secondItem="TBg-bM-dcg" secondAttribute="top" id="uH5-aj-rmM"/>
+                            <constraint firstAttribute="bottom" secondItem="SId-rn-HQB" secondAttribute="bottom" id="wdQ-gs-orB"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="TBg-bM-dcg" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="M8N-nH-HgQ"/>
+                    <constraint firstItem="TBg-bM-dcg" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="V7C-PO-L3T"/>
+                    <constraint firstItem="DV9-Qk-vPU" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="i6b-RY-ZGY"/>
+                    <constraint firstItem="DV9-Qk-vPU" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="r1T-lR-otS"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="loadButton" destination="SId-rn-HQB" id="K5Q-2y-haI"/>
+                <outlet property="loadingIndicatorView" destination="DV9-Qk-vPU" id="Z7e-1w-HrW"/>
+                <outlet property="tryAgainContainerView" destination="TBg-bM-dcg" id="uAL-mv-xAh"/>
+            </connections>
+            <point key="canvasLocation" x="127" y="111"/>
+        </tableViewCell>
+    </objects>
+</document>

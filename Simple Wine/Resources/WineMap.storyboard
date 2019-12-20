@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="ipad9_7" orientation="landscape">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="CharterITC Bold.otf">
+            <string>CharterITC-Bold</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Base View Controller-->
+        <scene sceneID="9Sm-nN-Hlp">
+            <objects>
+                <viewController storyboardIdentifier="priceRanges" id="biK-pX-q8n" customClass="BaseViewController" customModule="Simple_Wine" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="lsP-6M-oQM">
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="65" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="CgG-WH-eri">
+                                <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <label key="tableHeaderView" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Price ranges" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="AdX-SM-IMG">
+                                    <rect key="frame" x="0.0" y="0.0" width="1024" height="48"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="wineTypeCell" id="sQF-o9-UqX">
+                                        <rect key="frame" x="0.0" y="76" width="1024" height="65"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="sQF-o9-UqX" id="tjw-qb-yka">
+                                            <rect key="frame" x="0.0" y="0.0" width="1024" height="65"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="V6u-1n-uY5">
+                                                    <rect key="frame" x="36" y="17.5" width="60" height="30.5"/>
+                                                    <fontDescription key="fontDescription" name="CharterITC-Bold" family="CharterITC" pointSize="24"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <constraints>
+                                                <constraint firstItem="V6u-1n-uY5" firstAttribute="leading" secondItem="tjw-qb-yka" secondAttribute="leading" constant="36" id="IoP-ai-EtF"/>
+                                                <constraint firstItem="V6u-1n-uY5" firstAttribute="centerY" secondItem="tjw-qb-yka" secondAttribute="centerY" id="MPb-YK-iBI"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="titleLabel" destination="V6u-1n-uY5" id="4hY-j1-GwO"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="delegate" destination="biK-pX-q8n" id="ZXB-Hc-XaS"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.058823529409999999" green="0.58039215690000001" blue="0.80392156859999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="CgG-WH-eri" firstAttribute="top" secondItem="lsP-6M-oQM" secondAttribute="top" id="3ow-Sa-ndj"/>
+                            <constraint firstAttribute="bottom" secondItem="CgG-WH-eri" secondAttribute="bottom" id="Dka-3C-xls"/>
+                            <constraint firstItem="CgG-WH-eri" firstAttribute="leading" secondItem="lsP-6M-oQM" secondAttribute="leading" id="LKr-6L-x97"/>
+                            <constraint firstAttribute="trailing" secondItem="CgG-WH-eri" secondAttribute="trailing" id="xcE-t3-2YA"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="BTy-yJ-gZC"/>
+                    </view>
+                    <connections>
+                        <outlet property="tableView" destination="CgG-WH-eri" id="6eP-5T-3jj"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="FDq-Oc-qvk" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2824" y="1819"/>
+        </scene>
+    </scenes>
+</document>

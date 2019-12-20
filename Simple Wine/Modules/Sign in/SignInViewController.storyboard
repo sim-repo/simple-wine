@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15400" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="ipad9_7" orientation="portrait" layout="fullscreen" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15404"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Geometria.otf">
+            <string>Geometria</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Sign In View Controller-->
+        <scene sceneID="Vj6-yD-m1i">
+            <objects>
+                <viewController storyboardIdentifier="SignInViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Nbc-WC-r6h" customClass="SignInViewController" customModule="Simple_Wine" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="M1L-cL-hfh">
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" bounces="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" contentInsetAdjustmentBehavior="never" bouncesZoom="NO" keyboardDismissMode="interactive" translatesAutoresizingMaskIntoConstraints="NO" id="otE-Mp-oio">
+                                <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                                <subviews>
+                                    <view userInteractionEnabled="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VMc-fb-iTF" userLabel="Top View">
+                                        <rect key="frame" x="0.0" y="0.0" width="768" height="315.5"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ke9-FR-bNQ" userLabel="Center View">
+                                        <rect key="frame" x="0.0" y="315.5" width="768" height="393"/>
+                                        <subviews>
+                                            <imageView contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo_gc" translatesAutoresizingMaskIntoConstraints="NO" id="dyn-nV-wQb">
+                                                <rect key="frame" x="226.5" y="0.0" width="315" height="169"/>
+                                                <gestureRecognizers/>
+                                            </imageView>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Логин" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="MZe-uO-tMD" customClass="TextField" customModule="Simple_Wine" customModuleProvider="target">
+                                                <rect key="frame" x="226.5" y="215" width="315" height="38"/>
+                                                <color key="backgroundColor" red="0.87067985530000003" green="0.86720484499999995" blue="0.83791053299999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="38" id="ZLk-7y-TTE"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="Geometria" family="Geometria" pointSize="17"/>
+                                                <textInputTraits key="textInputTraits" autocorrectionType="no" returnKeyType="next" smartDashesType="no" smartInsertDeleteType="no" textContentType="username"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                        <integer key="value" value="5"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <outlet property="delegate" destination="Nbc-WC-r6h" id="FSM-48-mM0"/>
+                                                </connections>
+                                            </textField>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Пароль" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="LPC-tg-VIN" customClass="TextField" customModule="Simple_Wine" customModuleProvider="target">
+                                                <rect key="frame" x="226.5" y="265" width="315" height="38"/>
+                                                <color key="backgroundColor" red="0.87067985530000003" green="0.86720484499999995" blue="0.83791053299999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="38" id="vmK-3f-8Wf"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="Geometria" family="Geometria" pointSize="17"/>
+                                                <textInputTraits key="textInputTraits" returnKeyType="go" secureTextEntry="YES" textContentType="password"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                        <integer key="value" value="5"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <outlet property="delegate" destination="Nbc-WC-r6h" id="Wb1-Jt-Rjw"/>
+                                                </connections>
+                                            </textField>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mlN-jV-Knm">
+                                                <rect key="frame" x="549.5" y="269" width="30" height="30"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="30" id="haW-Ra-fMd"/>
+                                                    <constraint firstAttribute="height" constant="30" id="lpO-Ra-WMt"/>
+                                                </constraints>
+                                                <state key="normal" image="RightArrowButton"/>
+                                                <connections>
+                                                    <action selector="signIn:" destination="Nbc-WC-r6h" eventType="touchUpInside" id="pdJ-RV-Nrl"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstItem="LPC-tg-VIN" firstAttribute="top" secondItem="MZe-uO-tMD" secondAttribute="bottom" constant="12" id="48G-gs-bDE"/>
+                                            <constraint firstItem="mlN-jV-Knm" firstAttribute="centerY" secondItem="LPC-tg-VIN" secondAttribute="centerY" id="8kC-GI-zdP"/>
+                                            <constraint firstItem="mlN-jV-Knm" firstAttribute="leading" secondItem="LPC-tg-VIN" secondAttribute="trailing" constant="8" id="DaC-R0-Fcw"/>
+                                            <constraint firstItem="dyn-nV-wQb" firstAttribute="width" secondItem="MZe-uO-tMD" secondAttribute="width" id="NZ1-5d-vmc"/>
+                                            <constraint firstItem="dyn-nV-wQb" firstAttribute="top" secondItem="ke9-FR-bNQ" secondAttribute="top" id="SbB-js-7ip"/>
+                                            <constraint firstAttribute="bottom" secondItem="LPC-tg-VIN" secondAttribute="bottom" constant="90" id="T7N-zo-UaS"/>
+                                            <constraint firstItem="LPC-tg-VIN" firstAttribute="width" secondItem="MZe-uO-tMD" secondAttribute="width" id="UQ8-MY-nJx"/>
+                                            <constraint firstItem="MZe-uO-tMD" firstAttribute="centerX" secondItem="ke9-FR-bNQ" secondAttribute="centerX" id="a0p-Pr-4Fy"/>
+                                            <constraint firstItem="dyn-nV-wQb" firstAttribute="leading" secondItem="MZe-uO-tMD" secondAttribute="leading" id="aeN-Xv-Uz6"/>
+                                            <constraint firstItem="LPC-tg-VIN" firstAttribute="centerX" secondItem="ke9-FR-bNQ" secondAttribute="centerX" id="k4Q-HI-dHd"/>
+                                            <constraint firstItem="MZe-uO-tMD" firstAttribute="width" secondItem="ke9-FR-bNQ" secondAttribute="width" multiplier="420/1024" id="oI0-tP-JZq"/>
+                                            <constraint firstItem="MZe-uO-tMD" firstAttribute="top" secondItem="dyn-nV-wQb" secondAttribute="bottom" constant="46" id="vk2-1u-3gN"/>
+                                        </constraints>
+                                    </view>
+                                    <view userInteractionEnabled="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gAq-Rh-cUK" userLabel="Bottom View">
+                                        <rect key="frame" x="0.0" y="708.5" width="768" height="315.5"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="ke9-FR-bNQ" firstAttribute="top" secondItem="VMc-fb-iTF" secondAttribute="bottom" id="2aI-8j-WTG"/>
+                                    <constraint firstAttribute="trailing" secondItem="ke9-FR-bNQ" secondAttribute="trailing" id="6M8-ua-iNS"/>
+                                    <constraint firstItem="gAq-Rh-cUK" firstAttribute="height" secondItem="VMc-fb-iTF" secondAttribute="height" id="73I-gZ-wYx"/>
+                                    <constraint firstAttribute="bottom" secondItem="gAq-Rh-cUK" secondAttribute="bottom" id="7at-Bi-HL1"/>
+                                    <constraint firstAttribute="trailing" secondItem="gAq-Rh-cUK" secondAttribute="trailing" id="8gN-87-bdw"/>
+                                    <constraint firstItem="gAq-Rh-cUK" firstAttribute="top" secondItem="ke9-FR-bNQ" secondAttribute="bottom" id="Dbe-qU-UFq"/>
+                                    <constraint firstItem="gAq-Rh-cUK" firstAttribute="leading" secondItem="otE-Mp-oio" secondAttribute="leading" id="LTt-Te-qxn"/>
+                                    <constraint firstItem="VMc-fb-iTF" firstAttribute="leading" secondItem="otE-Mp-oio" secondAttribute="leading" id="TPt-bt-cRg"/>
+                                    <constraint firstAttribute="trailing" secondItem="VMc-fb-iTF" secondAttribute="trailing" id="aDZ-Ee-jTw"/>
+                                    <constraint firstItem="VMc-fb-iTF" firstAttribute="top" secondItem="otE-Mp-oio" secondAttribute="top" id="g4F-uO-YGP"/>
+                                    <constraint firstItem="VMc-fb-iTF" firstAttribute="centerX" secondItem="otE-Mp-oio" secondAttribute="centerX" id="pvi-e4-Uk8"/>
+                                    <constraint firstItem="gAq-Rh-cUK" firstAttribute="centerX" secondItem="otE-Mp-oio" secondAttribute="centerX" id="rnk-da-Nh2"/>
+                                    <constraint firstItem="ke9-FR-bNQ" firstAttribute="centerX" secondItem="otE-Mp-oio" secondAttribute="centerX" id="sGG-x5-5fH"/>
+                                    <constraint firstItem="ke9-FR-bNQ" firstAttribute="leading" secondItem="otE-Mp-oio" secondAttribute="leading" id="wbx-7n-BBh"/>
+                                    <constraint firstItem="ke9-FR-bNQ" firstAttribute="centerY" secondItem="otE-Mp-oio" secondAttribute="centerY" id="yqT-CH-TZI"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="otE-Mp-oio" secondAttribute="trailing" id="Dre-nZ-q5C"/>
+                            <constraint firstAttribute="bottom" secondItem="otE-Mp-oio" secondAttribute="bottom" id="P04-W1-hAy"/>
+                            <constraint firstItem="otE-Mp-oio" firstAttribute="top" secondItem="M1L-cL-hfh" secondAttribute="top" id="hM6-3c-nte"/>
+                            <constraint firstItem="otE-Mp-oio" firstAttribute="leading" secondItem="M1L-cL-hfh" secondAttribute="leading" id="u90-rC-GGM"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Xbu-yt-BXE"/>
+                    </view>
+                    <connections>
+                        <outlet property="loginTextField" destination="MZe-uO-tMD" id="iqe-xT-KiN"/>
+                        <outlet property="logoImageView" destination="dyn-nV-wQb" id="8yT-Om-X8R"/>
+                        <outlet property="passwordTextField" destination="LPC-tg-VIN" id="Ci4-yl-cca"/>
+                        <outlet property="scroll" destination="otE-Mp-oio" id="FxH-xy-pqk"/>
+                        <outlet property="signInButton" destination="mlN-jV-Knm" id="1yB-4o-MjA"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ews-To-beh" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="841.9921875" y="110.9375"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="RightArrowButton" width="49" height="49"/>
+        <image name="logo_gc" width="196" height="84.5"/>
+    </resources>
+</document>

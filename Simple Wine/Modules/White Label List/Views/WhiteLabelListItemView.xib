@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14868" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="ipad9_7" orientation="landscape" layout="fullscreen" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14824"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="WhiteLabelListItemView" customModule="Simple_Wine" customModuleProvider="target">
+            <connections>
+                <outlet property="highlightView" destination="fxH-pR-UzK" id="ak9-oM-8FH"/>
+                <outlet property="lineView" destination="F96-eC-ubv" id="7BX-iV-0VF"/>
+                <outlet property="logoImageView" destination="im1-TG-MBL" id="WWQ-4h-VUz"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="1024" height="256"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view hidden="YES" alpha="0.20000000000000001" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fxH-pR-UzK">
+                    <rect key="frame" x="0.0" y="0.0" width="1024" height="256"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </view>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo_gc" translatesAutoresizingMaskIntoConstraints="NO" id="im1-TG-MBL" userLabel="Logo Image View">
+                    <rect key="frame" x="316" y="43.5" width="392" height="169"/>
+                </imageView>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="MenuRightArrowButton" translatesAutoresizingMaskIntoConstraints="NO" id="emG-Vh-76X" userLabel="Arrow Image View">
+                    <rect key="frame" x="916" y="104" width="48" height="48"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="48" id="Hvs-Nw-q0N"/>
+                        <constraint firstAttribute="width" constant="48" id="tVP-HD-Ojd"/>
+                    </constraints>
+                </imageView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="F96-eC-ubv" userLabel="Separator View">
+                    <rect key="frame" x="30" y="0.0" width="964" height="1"/>
+                    <color key="backgroundColor" red="0.41960784309999999" green="0.42745098040000001" blue="0.41960784309999999" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="1" id="iNo-iz-TdJ"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="fxH-pR-UzK" secondAttribute="trailing" id="14c-Ia-vQT"/>
+                <constraint firstItem="im1-TG-MBL" firstAttribute="centerY" secondItem="vUN-kp-3ea" secondAttribute="centerY" id="6sl-36-U1K"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="emG-Vh-76X" secondAttribute="trailing" constant="60" id="Dtw-m1-6XS"/>
+                <constraint firstItem="F96-eC-ubv" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="XIo-Qg-KgX"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="fxH-pR-UzK" secondAttribute="bottom" id="eht-aH-SEM"/>
+                <constraint firstItem="im1-TG-MBL" firstAttribute="centerX" secondItem="vUN-kp-3ea" secondAttribute="centerX" id="fGj-5p-Bwb"/>
+                <constraint firstItem="fxH-pR-UzK" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="hSW-Ov-SHw"/>
+                <constraint firstAttribute="trailing" secondItem="F96-eC-ubv" secondAttribute="trailing" constant="30" id="hqi-8Y-6lR"/>
+                <constraint firstItem="fxH-pR-UzK" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="j12-0D-475"/>
+                <constraint firstItem="F96-eC-ubv" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="30" id="uMU-sn-fg8"/>
+                <constraint firstItem="emG-Vh-76X" firstAttribute="centerY" secondItem="vUN-kp-3ea" secondAttribute="centerY" id="yVs-6z-LYJ"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <point key="canvasLocation" x="85" y="154"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="MenuRightArrowButton" width="48" height="48"/>
+        <image name="logo_gc" width="196" height="84.5"/>
+    </resources>
+</document>
